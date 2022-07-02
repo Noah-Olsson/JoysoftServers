@@ -27,9 +27,10 @@ sudo usermod -a -G lim pupils
 echo Rebooting! On startup, you should boot into EdOs 1.0
 echo Hope you enjoy!
 echo See intro.txt if you want some instructions on how to use.
-wget https://images.pexels.com/photos/1408221/pexels-photo-1408221.jpeg
+wget https://images.pexels.com/photos/1408221/pexels-photo-1408221.jpeg?cs=srgb&dl=pexels-irina-iriser-1408221.jpg&fm=jpg
 sudo apt-get install pcmanfm -y
 pcmanfm --set-wallpaper pexels-photo-1408221.jpeg
-sudo apt-get autoremove pcmanfm 
+sudo apt-get autoremove pcmanfm -y
 sudo lightdm
 sudo cp -R startup.sh /etc/
+#MUST DOWNLOAD startup.sh
